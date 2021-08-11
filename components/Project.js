@@ -47,7 +47,7 @@ export default function Project({ projectRef }) {
           datas={[
             { "Feature": "간단한 소개, 보유 기술, GitHub, Notion, 개인 프로젝트 경험" },
             { "GitHub": "https://github.com/Qndtl/Portfolio_v3" },
-            { "Domain": "Not Yet" },
+            { "Domain": "portfolio-v3-qndtl.vercel.app" },
             { "Front-End": "NextJS, Bootstrap" }
           ]} />
         <ProjectCard
