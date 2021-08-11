@@ -2,30 +2,30 @@ import Image from "next/image"
 import Link from "next/link"
 import { list } from "postcss"
 
-export default function StudyCard({ title, body1, body2, link1, link2, description }) {
+export default function StudyCard({ studyTitle, studyBody1, studyBody2, link1, link2, description }) {
   return (
     <div
       className="card p-4 bg-light d-flex flex-column mt-5"
       style={{ width: "450px", minHeight: "320px", zIndex: 1000 }}>
       <div className="d-flex align-items-center">
         {
-          title === "GitHub" ?
+          studyTitle === "GitHub" ?
             <Image src="/github.png" width={50} height={50} /> :
             <Image src="/notion.png" width={48} height={48} />
         }
-        <h1 className="ms-2 fw-bold">{title}</h1>
+        <h1 className="ms-2 fw-bold">{studyTitle}</h1>
       </div>
       <Link href={link1}>
-        <a className="my-2 text-primary">{title} Link &#10132;</a>
+        <a className="my-2 text-primary">{studyTitle} Link &#10132;</a>
       </Link>
-      <h6>{body1}</h6>
+      <h6>{studyBody1}</h6>
       {
-        body2 && (
+        studyBody2 && (
           <>
             <Link href={link2}>
-              <a className="my-2 text-primary">{title} Link &#10132;</a>
+              <a className="my-2 text-primary">{studyTitle} Link &#10132;</a>
             </Link>
-            <h6>{body2}</h6>
+            <h6>{studyBody2}</h6>
           </>
         )
       }

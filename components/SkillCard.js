@@ -1,9 +1,9 @@
 import { Apollo, AWS, Bootstrap, Css, Graphql, Heroku, Html, Javascript, Netlify, Postgresql, Prisma, ReactIcon, Redux, Sass, Vercel } from "./Icons";
 
-export default function SkillCard({ title, skills }) {
+export default function SkillCard({ studyTitle, skills }) {
   return (
     <div className="card p-3 m-3" style={{ width: "250px", minHeight: "100px" }}>
-      <h2 className="mb-0 text-danger">{title}</h2>
+      <h2 className="mb-0 text-danger">{studyTitle}</h2>
       <hr />
       <div className="d-flex flex-wrap justify-content-evenly align-items-center">
         {
