@@ -10,8 +10,8 @@ export default function StudyCard({ studyTitle, studyBody1, studyBody2, link1, l
       <div className="d-flex align-items-center">
         {
           studyTitle === "GitHub" ?
-            <Image src="/github.png" width={50} height={50} /> :
-            <Image src="/notion.png" width={48} height={48} />
+            <Image src="/github.png" width={50} height={50} alt="github" /> :
+            <Image src="/notion.png" width={48} height={48} alt="notion" />
         }
         <h1 className="ms-2 fw-bold">{studyTitle}</h1>
       </div>
