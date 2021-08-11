@@ -1,5 +1,6 @@
 import { Carousel } from "react-bootstrap";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProjectCard({ title, images, description, datas }) {
   return (
@@ -10,10 +11,13 @@ export default function ProjectCard({ title, images, description, datas }) {
           {
             images.map((image, idx) => (
               <Carousel.Item interval={1500} key={idx}>
-                <img
+                <Image
                   className="d-block w-100"
                   src={image}
                   alt="First slide"
+                  width={1000}
+                  height={500}
+                  objectFit="contain"
                 />
               </Carousel.Item>
             ))
