@@ -6,6 +6,7 @@ import Project from "../components/Project";
 import Skill from "../components/Skill";
 import Study from "../components/Study";
 import Footer from "../components/Footer";
+import Head from "next/head";
 
 export default function Home() {
   const aboutRef = useRef();
@@ -15,6 +16,10 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>DUKFOLIO</title>
+        <link rel="shortcut icon" href="/icon.ico" type="image/x-icon" />
+      </Head>
       <Header aboutRef={aboutRef} skillRef={skillRef} studyRef={studyRef} projectRef={projectRef} />
       <BackImage aboutRef={aboutRef} />
       <About aboutRef={aboutRef} />

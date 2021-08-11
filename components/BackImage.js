@@ -10,7 +10,7 @@ export default function BackImage({ aboutRef }) {
         <h1>WEB PORTFOLIO</h1>
         <span style={{ textAlign: "center" }}>안녕하세요.</span>
         <span style={{ textAlign: "center" }}>웹 개발자를 꿈꾸고 있는 조현덕입니다.</span>
-        <button className={styles.moreBtn} onClick={onClick}>MORE</button>
+        <button className={styles.moreBtn} onClick={onClick}>MORE &#129043;</button>
       </div>
     </section>
   )

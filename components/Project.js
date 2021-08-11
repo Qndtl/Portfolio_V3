@@ -19,7 +19,7 @@ export default function Project({ projectRef }) {
         }}>
         <h1 className="mb-5 border-bottom border-light border-2 fw-bold lh-lg text-light">Projects</h1>
         <ProjectCard
-          title="리그오브레전드 전적 검색"
+          title="리그오브레전드 전적"
           description={lolDescription}
           images={["/lol/lol_main.PNG", "/lol/lol_detail.PNG"]}
           datas={[
